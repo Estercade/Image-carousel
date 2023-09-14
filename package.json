@@ -1,0 +1,25 @@
+{
+  "name": "image-carousel",
+  "version": "1.0.0",
+  "description": "This project was made following the instructions and specifications for [The Odin Project Intermediate HTML and CSS Course Todo List project](https://www.theodinproject.com/lessons/node-path-javascript-restaurant-page).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/Estercade/Image-carousel.git"
+  },
+  "author": "Estercade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Estercade/Image-carousel/issues"
+  },
+  "homepage": "https://github.com/Estercade/Image-carousel#readme",
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  }
+}

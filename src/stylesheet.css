@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all ease-in-out 500ms;
+}
+
+body {
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#gallery-container {
+    position: relative;
+}
+
+#gallery-wrapper {
+    width: 13rem;
+    overflow: hidden;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem 13rem 13rem 13rem;
+}
+
+.image-wrapper {
+    width: 13rem;
+    height: 13rem;
+    /* margin: 1rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery.position0 {
+    transform: translate(calc(50% - 6.5rem));
+}
+
+#gallery.position1 {
+    transform: translate(calc(50% - 19.5rem));
+}
+
+#gallery.position2 {
+    transform: translate(calc(50% - 32.5rem));
+}
+
+#gallery.position3 {
+    transform: translate(calc(50% - 45.5rem));
+}
+
+#gallery.position4 {
+    transform: translate(calc(50% - 58.5rem));
+}
+
+#gallery.position5 {
+    transform: translate(calc(50% - 71.5rem));
+}
+
+#button-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#next-button, #previous-button {
+    width: 1.5rem;
+    background: none;
+    border: none;
+    position: absolute;
+    bottom: 5.5rem;
+}
+
+#next-button {
+    right: -1.5rem;
+}
+
+#previous-button {
+    left: -1.5rem;
+}
+
+#progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-button {
+    width: 0.45rem;
+    background: none;
+    border: none;
+    border-radius: 50%;
+    margin: 0.2rem;
+}
+
+.progress-button-icon-unselected {
+    filter: invert(33%) sepia(7%) saturate(7%) hue-rotate(358deg) brightness(103%) contrast(93%) opacity(30%);
+}
+
+.progress-button-icon-selected {
+    filter: opacity(100%);
+}
